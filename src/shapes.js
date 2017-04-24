@@ -22,9 +22,8 @@ class Shapes extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.handleClick.bind(this)}>change color</button>
         <svg version="1.1" width="250" height="250" xmlns="http://www.w3.org/2000/svg" >
-          <rect width="100%" height="100%" fill={this.state.color} />
+          <rect width="100%" height="100%" fill={this.state.color} onClick={this.handleClick.bind(this)}/>
         </svg>
       </div>
     )
