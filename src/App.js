@@ -7,9 +7,9 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className='root'>
         <ReactCursorPosition>
-          <Shapes />
+          <Shapes width={100} height={100}/>
         </ReactCursorPosition>
       </div>
     );

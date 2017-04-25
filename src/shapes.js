@@ -22,12 +22,12 @@ class Shapes extends Component {
     return (
       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" >
         <rect
-          width="100px"
-          height="100px"
+          width={this.props.width}
+          height={this.props.width}
           fill={this.state.color}
           onClick={this.handleClick.bind(this)}
-          x={this.props.cursorPosition.x}
-          y={this.props.cursorPosition.y}/>
+          x={this.props.cursorPosition.x - (this.props.width/ 2)}
+          y={this.props.cursorPosition.y - (this.props.height/ 2)}/>
       </svg>
     )
   }
